@@ -35,10 +35,7 @@ CLAPI.sendRequest = (method, url, body, formData) => {
                 "X-Api-Key": SETUP.key
             }
         }, (e, res, body) => {
-            if(e) reject({
-                e,
-                res
-            });
+            if(e) reject(e);
             else resolve({
                 res,
                 body
