@@ -3,7 +3,7 @@ requires NodeJS v4.2*+
 
 #### CLAPI.setup(setup)
 - _setup_
-  - _api_: your api key
+  - _key_: your api key
   - _base_: base url ('https://api.clickmeeting.com/v1/' by default)
 
 #### CLAPI.sendRequest(method, url, body, formData)
