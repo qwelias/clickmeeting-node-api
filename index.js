@@ -24,7 +24,7 @@ CLAPI.setup = (setup) => {
 };
 
 CLAPI.sendRequest = (method, url, body, formData) => {
-    if(!SETUP.key) return null;
+    if(!SETUP.key) return Promise.reject(new Error("API KEY REQUIRED"));
     url = SETUP.base+url+"/"+jsonToQueryString(body);
     return new Promise((resolve, reject) => {
         request({
