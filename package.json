@@ -1,15 +1,25 @@
 {
-  "name": "click-meeting-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "debug": "^2.2.0",
-    "request": "^2.69.0"
-  }
+    "name": "clickmeeting-node-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {},
+    "author": "Elias Baryshnikov <qwelias@gmail.com> a.k.a. qwemaze",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/qwemaze/clickmeeting-node-api.git"
+    },
+    "keywords": [
+        "clickmeeting",
+        "click",
+        "meeting",
+        "nodejs",
+        "node",
+        "js",
+        "api"
+    ],
+    "dependencies": {
+        "request": "^2.69.0"
+    }
 }
