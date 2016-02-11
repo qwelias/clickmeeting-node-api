@@ -3,7 +3,6 @@
 const request = require("request");
 const fs = require("fs");
 const path = require("path");
-const Log = require("debug")("CLAPI");
 
 const SETUP = {
     key: null,
@@ -27,7 +26,6 @@ CLAPI.setup = (setup) => {
 CLAPI.sendRequest = (method, url, body, formData) => {
     if(!SETUP.key) return null;
     url = SETUP.base+url+"/"+jsonToQueryString(body);
-    Log("@sendRequest", method, url, body, formData)
     return new Promise((resolve, reject) => {
         request({
             method,
