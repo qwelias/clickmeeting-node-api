@@ -8,7 +8,7 @@ requires NodeJS v4.2*+
 
 #### CLAPI.sendRequest(method, url, body, formData)
 * _url_: relative to _setup.base_
-* ?_formData_: format according to **[request](https://github.com/request/request#requestoptions-callback)** module
+* ?_formData_: format according to **[request](https://github.com/request/request#multipartform-data-multipart-form-uploads)** module
 * you can use this method instead of everything below
 
 #### CLAPI.conferences(status)
